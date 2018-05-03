@@ -183,6 +183,8 @@ main {
     background-color: #f5f5f5;
     position: relative;
     margin-bottom: 20px; }
+    main .order-list .order-item > small {
+      font-size: 1.2em; }
     @media (min-width: 500px) and (max-width: 768px) {
       main .order-list .order-item {
         min-height: 280px; } }
@@ -224,7 +226,8 @@ main {
       padding: 20px;
       border-bottom: 1px solid #f5f5f5;
       text-transform: uppercase;
-      overflow: hidden; }
+      overflow: hidden;
+      font-size: 1.3em; }
       main .order-list .order-item .order-receipt .receipt-item:last-of-type {
         border-bottom: none; }
       main .order-list .order-item .order-receipt .receipt-item p {

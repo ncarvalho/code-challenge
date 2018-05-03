@@ -270,6 +270,9 @@ main {
             background-color: $lt-grey;
             position: relative;
             margin-bottom: 20px;
+            & > small {
+                font-size: 1.2em;
+            }
 
             @media (min-width: 500px) and (max-width: $sm) {
                 min-height: 280px;
@@ -329,6 +332,7 @@ main {
                     border-bottom: 1px solid $lt-grey;
                     text-transform: uppercase;
                     overflow: hidden;
+                    font-size: 1.3em;
                     &:last-of-type {
                         border-bottom: none;
                     }
