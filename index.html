@@ -1,0 +1,521 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Food Central</title>
+    
+    <link rel="icon" 
+      type="image/png" 
+      href="./images/favicon.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,700|Quicksand:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <header class="top-nav">
+                <a href="#" class="pull-left text-white" id="hamburger"><i class="mdi mdi-menu mdi-24px" id="hamburger-icon"></i></a>
+                <img src="./images/logo.png" class="logo" alt="Food Central" width="50">
+                <h1 class="logo-text">Food Central</h1>
+
+                <div class="pull-right">
+                    <ul class="inline-list">
+                        <li><i class="mdi mdi-circle text-green"></i></li>
+                        <li>
+                            <div class="dropdown">
+                                <a class="dropdown-toggle status-dropdown-btn" id="status-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    Niko's Ramen <i class="mdi mdi-chevron-down mdi-18px"></i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="status-menu">
+                                    <li><a href="#"><small><i class="mdi mdi-circle"></i> Go Offline</small></a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="time"><strong>8:39 PM</strong></li>
+                    </ul>
+                </div>
+            </header>
+
+            <nav id="left-nav">
+                <ul class="clean-list">
+                    <li class="active">
+                        <a href="#">
+                            <i class="mdi mdi-format-list-bulleted"></i>
+                            <span>orders</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="mdi mdi-silverware"></i>
+                            <span>menu</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="mdi mdi-poll"></i>
+                            <span>reports</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="mdi mdi-currency-usd"></i>
+                            <span>promotions</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="mdi mdi-settings"></i>
+                            <span>settings</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <main>
+                <section id="pending-orders">
+                    <header class="section-header col-xs-12">
+                        <h3>Pending Orders</h3>
+                        <div class="header-tools">
+                            <a href="#">Oldest to Newest <i class="mdi mdi-arrow-down"></i></a>
+                        </div>
+                    </header>
+                    <div class="order-list col-xs-12">
+                        <div class="row">
+                            <div class="order-container col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                                <div class="order-item">
+                                    <div class="badge badge-blue">
+                                        <i class="mdi mdi-alert-decagram"></i>
+                                        <span>8:37 PM</span>
+                                    </div>
+
+                                    <a type="button" class="pull-right see-more" data-toggle="modal" data-target="#H178X76">
+                                        <i class="mdi mdi-dots-horizontal mdi-18px"></i>
+                                    </a>
+                                    
+                                    <!-- details -->
+                                    <div class="modal fade" id="H178X76" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                        <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                <h4 class="modal-title" id="myModalLabel">#H178X76 <small>8:37 PM</small></h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h4 class="no-margins">1304 West 2nd Street</h4>
+                                                <h4 class="no-margins"><small>Nicole Tavares Carvalho</small></h4>
+                                                <h4 class="no-margins"><small>(407) 460-4067</small></h4>
+
+                                                <div class="map-container">
+                                                    <img src="./images/map.png" class="img-responsive" alt="location">
+                                                </div>
+
+                                                <div class="order-receipt">
+                                                    <div class="receipt-item">
+                                                        <p>
+                                                            3 Spicy Miso 
+                                                            <small>+ thick noodle, egg(injected), green onion</small>
+                                                        </p>
+                                                        <strong class="pull-right price">$37.50</strong>
+                                                    </div>
+                                                    <div class="receipt-item">
+                                                        <span>2 Coca Cola</span>
+                                                        <strong class="pull-right">$3.50</strong>
+                                                    </div>
+                                                    <div class="receipt-item">
+                                                        <span>1 Green Tea</span>
+                                                        <strong class="pull-right">$2.25</strong>
+                                                    </div>
+                                                    <div class="receipt-item">
+                                                        <div class="text-grey">
+                                                            <small>Subtotal</small>
+                                                            <small class="pull-right">$43.25</small>
+                                                        </div>
+                                                        <div class="text-grey">
+                                                            <small>Taxes &amp; fees</small>
+                                                            <small class="pull-right">$6.99</small>
+                                                        </div>
+                                                    </div>
+                                                    <div class="receipt-item">
+                                                        <strong>Total</strong>
+                                                        <strong class="pull-right">$50.24</strong>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+
+                                    <h5>#H178X76</h4>
+                                    <ul class="clean-list item-list">
+                                        <li>
+                                            <span class="item-count">3</span> Spicy Miso
+                                            <ul class="clean-list sub-list">
+                                                <li>+ thick noodle</li>
+                                                <li>+ egg (injected)</li>
+                                                <li>+ green onion</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <span class="item-count">2</span> Coca Cola
+                                        </li>
+                                        <li>
+                                            <span class="item-count">1</span> Green Tea
+                                        </li>
+                                    </ul>
+
+                                    <div class="options text-center">
+                                        <a href="#" class="btn-accept">
+                                            <i class="mdi mdi-check"></i>
+                                            accept
+                                        </a>
+                                        <a href="#" class="btn-decline">
+                                            <i class="mdi mdi-close"></i>
+                                            decline
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="progress-orders">
+                    <header class="section-header col-xs-12">
+                        <h3>In Progress</h3>
+                        <div class="header-tools">
+                            <div class="dropdown">
+                                <a class="dropdown-toggle" id="progress-filter" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    All
+                                    <i class="mdi mdi-chevron-down"></i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="progress-filter">
+                                    <li><a href="#">Out for Delivery</a></li>
+                                    <li><a href="#">Ready for Pickup</a></li>
+                                    <li><a href="#">Being Prepared</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">All</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </header>
+                    <div class="order-list col-xs-12">
+                        <div class="row">
+                            <div class="order-container col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                                <div class="order-item">
+                                    <div class="badge badge-ash">
+                                        <i class="mdi mdi-car"></i>
+                                        <span>out for delivery</span>
+                                    </div>
+
+                                    <small class="pull-right text-grey">8:05 PM</small>
+
+                                    <h5>#H178X71</h4>
+                                    <ul class="clean-list item-list">
+                                        <li>
+                                            <span class="item-count">1</span> Spicy Miso
+                                            <ul class="clean-list sub-list">
+                                                <li>+ thick noodle</li>
+                                                <li>+ egg (injected)</li>
+                                                <li>+ green onion</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <span class="item-count">1</span> Diet Coke
+                                        </li>
+                                    </ul>
+
+                                    <div class="options process-options text-center">
+                                        <a type="button" class="see-more" data-toggle="modal" data-target="#H178X72">
+                                            <i class="mdi mdi-dots-horizontal mdi-18px"></i>
+                                        </a>
+                                        <a href="#" class="text-dark">
+                                            <i class="mdi mdi-map-marker-circle"></i>
+                                        </a>
+                                        <a href="#" class="text-dark">
+                                            <i class="mdi mdi-phone"></i>
+                                        </a>
+                                    </div>
+
+                                    <div class="modal fade" id="H178X71" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                    <h4 class="modal-title" id="myModalLabel">#H178X71 <small>8:05 PM</small></h4>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <h4 class="no-margins">1304 West 2nd Street</h4>
+                                                    <h4 class="no-margins"><small>Nicole Tavares Carvalho</small></h4>
+                                                    <h4 class="no-margins"><small>(407) 460-4067</small></h4>
+    
+                                                    <div class="map-container">
+                                                        <img src="./images/map.png" class="img-responsive" alt="location">
+                                                    </div>
+    
+                                                    <div class="order-receipt">
+                                                        <div class="receipt-item">
+                                                            <p>
+                                                                1 Spicy Miso 
+                                                                <small>+ thick noodle, egg(injected), green onion</small>
+                                                            </p>
+                                                            <strong class="pull-right price">$12.50</strong>
+                                                        </div>
+                                                        <div class="receipt-item">
+                                                            <span>1 Diet Coke</span>
+                                                            <strong class="pull-right">$1.75</strong>
+                                                        </div>
+                                                        <div class="receipt-item">
+                                                            <div class="text-grey">
+                                                                <small>Subtotal</small>
+                                                                <small class="pull-right">$14.25</small>
+                                                            </div>
+                                                            <div class="text-grey">
+                                                                <small>Taxes &amp; fees</small>
+                                                                <small class="pull-right">$5.99</small>
+                                                            </div>
+                                                        </div>
+                                                        <div class="receipt-item">
+                                                            <strong>Total</strong>
+                                                            <strong class="pull-right">$20.24</strong>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="order-container col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                                <div class="order-item">
+                                    <div class="badge badge-orange">
+                                        <i class="mdi mdi-approval"></i>
+                                        <span>ready for pickup</span>
+                                    </div>
+
+                                    <small class="pull-right text-grey">8:24 PM</small>
+
+                                    <h5>#H178X73</h4>
+                                    <ul class="clean-list item-list">
+                                        <li>
+                                            <span class="item-count">1</span> Tonkotzu
+                                            <ul class="clean-list sub-list">
+                                                <li>+ green onion</li>
+                                                <li>+ thin noodle</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <span class="item-count">1</span> Spicy Miso
+                                            <ul class="clean-list sub-list">
+                                                <li>+ thick noodle</li>
+                                                <li>+ egg (injected)</li>
+                                                <li>+ green onion</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <span class="item-count">2</span> Green Tea
+                                        </li>
+                                    </ul>
+
+                                    <div class="options process-options text-center">
+                                        <a type="button" class="see-more" data-toggle="modal" data-target="#H178X73">
+                                            <i class="mdi mdi-dots-horizontal mdi-18px"></i>
+                                        </a>
+                                        <a href="#" class="text-dark">
+                                            <i class="mdi mdi-map-marker-circle"></i>
+                                        </a>
+                                        <a href="#" class="text-dark">
+                                            <i class="mdi mdi-phone"></i>
+                                        </a>
+                                    </div>
+
+                                    <div class="modal fade" id="H178X73" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                    <h4 class="modal-title" id="myModalLabel">#H178X73 <small>8:24 PM</small></h4>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <h4 class="no-margins">1304 West 2nd Street</h4>
+                                                    <h4 class="no-margins"><small>Nicole Tavares Carvalho</small></h4>
+                                                    <h4 class="no-margins"><small>(407) 460-4067</small></h4>
+    
+                                                    <div class="map-container">
+                                                        <img src="./images/map.png" class="img-responsive" alt="location">
+                                                    </div>
+    
+                                                    <div class="order-receipt">
+                                                            <div class="receipt-item">
+                                                                <p>
+                                                                    1 Tonkotzu
+                                                                    <small>+ green onion, thin noodle</small>
+                                                                </p>
+                                                                <strong class="pull-right price">$13.50</strong>
+                                                            </div>
+                                                        <div class="receipt-item">
+                                                            <p>
+                                                                1 Spicy Miso 
+                                                                <small>+ thick noodle, egg(injected), green onion</small>
+                                                            </p>
+                                                            <strong class="pull-right price">$12.50</strong>
+                                                        </div>
+                                                        <div class="receipt-item">
+                                                            <span>2 Green Tea</span>
+                                                            <strong class="pull-right">$4.50</strong>
+                                                        </div>
+                                                        <div class="receipt-item">
+                                                            <div class="text-grey">
+                                                                <small>Subtotal</small>
+                                                                <small class="pull-right">$30.50</small>
+                                                            </div>
+                                                            <div class="text-grey">
+                                                                <small>Taxes &amp; fees</small>
+                                                                <small class="pull-right">$6.99</small>
+                                                            </div>
+                                                        </div>
+                                                        <div class="receipt-item">
+                                                            <strong>Total</strong>
+                                                            <strong class="pull-right">$37.49</strong>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="order-container col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                                <div class="order-item">
+                                    <div class="badge badge-berry">
+                                        <i class="mdi mdi-fire"></i>
+                                        <span>being prepared</span>
+                                    </div>
+
+                                    <small class="pull-right text-grey">8:33 PM</small>
+
+                                    <h5>#H178X74</h4>
+                                    <ul class="clean-list item-list">
+                                        <li>
+                                            <span class="item-count">1</span> Spicy Miso
+                                            <ul class="clean-list sub-list">
+                                                <li>+ thick noodle</li>
+                                                <li>+ egg (injected)</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <span class="item-count">1</span> Tonkotzu
+                                            <ul class="clean-list sub-list">
+                                                <li>+ green onion</li>
+                                                <li>+ thin noodle</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <span class="item-count">2</span> Orange Fanta
+                                        </li>
+                                    </ul>
+
+                                    <div class="options process-options text-center">
+                                        <a type="button" class="see-more" data-toggle="modal" data-target="#H178X74">
+                                            <i class="mdi mdi-dots-horizontal mdi-18px"></i>
+                                        </a>
+                                        <a href="#" class="text-dark">
+                                            <i class="mdi mdi-map-marker-circle"></i>
+                                        </a>
+                                        <a href="#" class="text-dark">
+                                            <i class="mdi mdi-phone"></i>
+                                        </a>
+                                    </div>
+
+                                    <div class="modal fade" id="H178X74" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                    <h4 class="modal-title" id="myModalLabel">#H178X74 <small>8:33 PM</small></h4>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <h4 class="no-margins">1304 West 2nd Street</h4>
+                                                    <h4 class="no-margins"><small>Nicole Tavares Carvalho</small></h4>
+                                                    <h4 class="no-margins"><small>(407) 460-4067</small></h4>
+    
+                                                    <div class="map-container">
+                                                        <img src="./images/map.png" class="img-responsive" alt="location">
+                                                    </div>
+    
+                                                    <div class="order-receipt">
+                                                        <div class="receipt-item">
+                                                            <p>
+                                                                1 Spicy Miso 
+                                                                <small>+ thick noodle, egg(injected)</small>
+                                                            </p>
+                                                            <strong class="pull-right price">$12.50</strong>
+                                                        </div>
+                                                        <div class="receipt-item">
+                                                            <p>
+                                                                1 Tonkotzu
+                                                                <small>+ green onion, thin noodle</small>
+                                                            </p>
+                                                            <strong class="pull-right price">$13.50</strong>
+                                                        </div>
+                                                        <div class="receipt-item">
+                                                            <span>2 Orange Fanta</span>
+                                                            <strong class="pull-right">$3.50</strong>
+                                                        </div>
+                                                        <div class="receipt-item">
+                                                            <div class="text-grey">
+                                                                <small>Subtotal</small>
+                                                                <small class="pull-right">$30.50</small>
+                                                            </div>
+                                                            <div class="text-grey">
+                                                                <small>Taxes &amp; fees</small>
+                                                                <small class="pull-right">$6.99</small>
+                                                            </div>
+                                                        </div>
+                                                        <div class="receipt-item">
+                                                            <strong>Total</strong>
+                                                            <strong class="pull-right">$36.49</strong>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <aside class="metrics">
+                <div class="metric-item">
+                    <h2>46</h2>
+                    <span>orders today</span>
+                </div>
+                <div class="metric-item">
+                    <canvas id="donut" width="100" height="100"></canvas>
+                </div>
+            </aside>
+
+            <footer>
+                <small class="text-grey">&copy; 2018 Food Central by Nicole Tavares Carvalho</small>
+            </footer>
+        </div>
+    </div>
+    
+
+    
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="./node_modules/chart.js/dist/Chart.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
