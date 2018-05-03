@@ -47,6 +47,7 @@ $quicksand: 'Quicksand', sans-serif;
 $sm: 768px;
 $md: 992px;
 $lg: 1200px;
+$xl: 1920px;
 
 // general
 html, body {
@@ -61,7 +62,7 @@ body {
     color: $dk-grey;
     font-size: 1em;
 
-    @media (min-width: 1920px) {
+    @media (min-width: $xl) {
         font-size: 1.2em;
     }
 }
@@ -167,6 +168,7 @@ nav#left-nav {
     z-index: 1;
     width: 100%;
     font-size: 1.2em;
+    position: absolute;
 
     @media (min-width: 768px) { 
         display: block !important;
@@ -224,6 +226,10 @@ main {
         overflow: hidden;
     }
 
+    #progress-filter {
+        cursor: pointer;
+    }
+
     h3 {
         font-size: 1.8em;
     }
@@ -266,10 +272,11 @@ main {
             margin-bottom: 20px;
 
             @media (min-width: 500px) and (max-width: $sm) {
-                height: 280px;
+                min-height: 280px;
             }
 
             @media (min-width: 768px) {
+                min-height: 280px;
                 height: 280px;
                 padding: 15px 25px 0 25px;
             }

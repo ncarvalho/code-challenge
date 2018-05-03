@@ -110,7 +110,8 @@ nav#left-nav {
   bottom: unset;
   z-index: 1;
   width: 100%;
-  font-size: 1.2em; }
+  font-size: 1.2em;
+  position: absolute; }
   @media (min-width: 768px) {
     nav#left-nav {
       display: block !important;
@@ -152,6 +153,8 @@ main {
   main #pending-orders {
     margin-bottom: 20px;
     overflow: hidden; }
+  main #progress-filter {
+    cursor: pointer; }
   main h3 {
     font-size: 1.8em; }
   main .section-header {
@@ -182,9 +185,10 @@ main {
     margin-bottom: 20px; }
     @media (min-width: 500px) and (max-width: 768px) {
       main .order-list .order-item {
-        height: 280px; } }
+        min-height: 280px; } }
     @media (min-width: 768px) {
       main .order-list .order-item {
+        min-height: 280px;
         height: 280px;
         padding: 15px 25px 0 25px; } }
     main .order-list .order-item .badge {
