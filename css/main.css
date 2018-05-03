@@ -228,6 +228,9 @@ main {
       text-transform: uppercase;
       overflow: hidden;
       font-size: 1.3em; }
+      @media (min-width: 1200px) {
+        main .order-list .order-item .order-receipt .receipt-item {
+          font-size: 1.5em; } }
       main .order-list .order-item .order-receipt .receipt-item:last-of-type {
         border-bottom: none; }
       main .order-list .order-item .order-receipt .receipt-item p {

@@ -333,6 +333,11 @@ main {
                     text-transform: uppercase;
                     overflow: hidden;
                     font-size: 1.3em;
+
+                    @media (min-width: $lg) {
+                        font-size: 1.5em;
+                    }
+
                     &:last-of-type {
                         border-bottom: none;
                     }
