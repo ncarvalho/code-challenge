@@ -29,7 +29,7 @@ body {
   background-color: #ffffff;
   color: #333232;
   font-size: 1em; }
-  @media (min-width: 1920px) {
+  @media (min-width: 1440px) {
     body {
       font-size: 1.2em; } }
 
