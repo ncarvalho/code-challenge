@@ -55,10 +55,12 @@ body {
     font-weight: 300;
     background-color: $white;
     color: $dk-grey;
+    font-size: 1em;
 }
 
 .row {
     position: relative;
+    height: 100%;
 }
 
 h1 {
@@ -66,7 +68,7 @@ h1 {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 7px;
-    font-size: 18px;
+    font-size: 2em;
 }
 
 h3 {
@@ -99,6 +101,7 @@ header#top-nav {
     padding: 15px;
     color: $white;
     height: 60px;
+    font-size: 1.3em;
 
     img#logo {
         float: left;
@@ -107,6 +110,7 @@ header#top-nav {
     h1#logo-text {
         margin: 5px 0;
         display: none;
+        font-size: 1.3em;
 
         @media (min-width: $sm) {
             display: inline-block;
@@ -149,6 +153,7 @@ nav#left-nav {
     bottom: unset;
     z-index: 1;
     width: 100%;
+    font-size: 1.2em;
 
     @media (min-width: 768px) { 
         display: block !important;
@@ -188,14 +193,15 @@ nav#left-nav {
 
 // main content
 main {
-    margin: 0 0 60px 0;
+    margin: 0;
     padding: 40px 0 0;
     overflow: hidden;
     width: 100%;
+    font-size: 1em;
 
     @media (min-width: 768px) {
         padding: 40px 25px 0;
-        margin: 0 120px 60px 100px;
+        margin: 0 120px 0 100px;
         width: unset;
     }
 
@@ -205,7 +211,7 @@ main {
     }
 
     h3 {
-        font-size: 18px;
+        font-size: 1.8em;
     }
 
     .section-header {
@@ -218,7 +224,7 @@ main {
             a {
                 text-transform: uppercase;
                 color: $dk-grey;
-                font-size: 11px;
+                font-size: 1.1em;
                 transition: color 0.2s;
                 &:hover {
                     color: lighten($dk-grey, 20%);
@@ -246,11 +252,11 @@ main {
             margin-bottom: 20px;
 
             @media (min-width: 500px) and (max-width: $sm) {
-                height: 260px;
+                height: 280px;
             }
 
             @media (min-width: 768px) {
-                height: 260px;
+                height: 280px;
                 padding: 15px 25px 0 25px;
             }
 
@@ -320,7 +326,7 @@ main {
             .item-list {
                  & > li {
                     text-transform: uppercase;
-                    font-size: 12px;
+                    font-size: 1.4em;
                     margin-bottom: 10px;
 
                     .item-count {
@@ -335,7 +341,7 @@ main {
                     li {
                         text-transform: lowercase;
                         color: lighten($dk-grey, 30%);
-                        font-size: 11px;
+                        font-size: .9em;
                     }
                 }
             }
@@ -347,6 +353,7 @@ main {
                 left: 0;
                 right: 0;
                 bottom: 0;
+                font-size: 1.3em;
                 a {
                     display: block;
                     padding: 10px 5px;
@@ -402,6 +409,7 @@ aside#metrics {
     color: $ash-blue;
     text-align: center;
     padding: 40px 20px;
+    font-size: 1.2em;
     .metric-item {
         margin-bottom: 60px;
         h2 {
@@ -416,24 +424,10 @@ aside#metrics {
             font-weight: 400;
             letter-spacing: 1px;
             margin-top: 10px;
+            font-family: 1em;
         }
     }
     @media (min-width: $sm) { 
         display: block;
-    }
-}
-
-// footer
-footer { 
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 20px 40px;
-    
-    @media (min-width: $sm) { 
-        display: block;
-        left: 100px;
-        right: 120px;
     }
 }
