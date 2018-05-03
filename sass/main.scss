@@ -281,6 +281,11 @@ main {
                 padding: 15px 25px 0 25px;
             }
 
+            @media (min-width: $xl) {
+                min-height: 310px;
+                height: 310px;
+            }
+
             .badge {
                 border-radius: 0;
                 padding: 10px 10px 8px 10px;

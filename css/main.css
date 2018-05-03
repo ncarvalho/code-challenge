@@ -191,6 +191,10 @@ main {
         min-height: 280px;
         height: 280px;
         padding: 15px 25px 0 25px; } }
+    @media (min-width: 1440px) {
+      main .order-list .order-item {
+        min-height: 310px;
+        height: 310px; } }
     main .order-list .order-item .badge {
       border-radius: 0;
       padding: 10px 10px 8px 10px;
