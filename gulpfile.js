@@ -1,4 +1,6 @@
 'use strict';
+ // npm install gulp
+ // npm install gulp-sass --save
  
 var gulp = require('gulp');
 var sass = require('gulp-sass');
