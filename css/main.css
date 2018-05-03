@@ -19,6 +19,9 @@
 .text-dark {
   color: #333232; }
 
+html, body {
+  height: 100%; }
+
 body {
   background: #ffffff;
   font-family: "Quicksand", sans-serif;
@@ -26,6 +29,9 @@ body {
   background-color: #ffffff;
   color: #333232;
   font-size: 1em; }
+  @media (min-width: 1920px) {
+    body {
+      font-size: 1.2em; } }
 
 .row {
   position: relative;
@@ -57,12 +63,17 @@ h3 {
   padding: 0;
   list-style-type: none; }
 
+.container-fluid {
+  height: 100%; }
+
 header#top-nav {
   background-color: #112131;
   padding: 15px;
   color: #ffffff;
   height: 60px;
-  font-size: 1.3em; }
+  font-size: 1.3em;
+  position: relative;
+  z-index: 2; }
   header#top-nav img#logo {
     float: left;
     margin-right: 25px; }
@@ -96,7 +107,6 @@ nav#left-nav {
   display: none;
   background-color: #2e4052;
   color: #ffffff;
-  position: absolute;
   bottom: unset;
   z-index: 1;
   width: 100%;
@@ -105,9 +115,10 @@ nav#left-nav {
     nav#left-nav {
       display: block !important;
       width: 100px;
-      position: absolute;
-      bottom: 0;
-      top: 60px; } }
+      position: fixed;
+      top: 0;
+      padding-top: 60px;
+      bottom: 0; } }
   nav#left-nav li {
     text-align: center; }
     nav#left-nav li.active a {
@@ -272,18 +283,18 @@ main {
 
 aside#metrics {
   display: none;
-  position: absolute;
+  position: fixed;
+  top: 0;
+  bottom: 0;
   right: 0;
   width: 120px;
-  top: 60px;
-  bottom: 0;
   background-color: #e8ecf1;
   color: #566a7f;
   text-align: center;
-  padding: 40px 20px;
+  padding: 60px 20px 40px;
   font-size: 1.2em; }
   aside#metrics .metric-item {
-    margin-bottom: 60px; }
+    margin: 30px 0; }
     aside#metrics .metric-item h2 {
       font-family: "Oswald", sans-serif;
       font-weight: 300;

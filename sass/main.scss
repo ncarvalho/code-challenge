@@ -49,6 +49,10 @@ $md: 992px;
 $lg: 1200px;
 
 // general
+html, body {
+    height: 100%;
+}
+
 body {
     background: $white;
     font-family: $quicksand;
@@ -56,6 +60,10 @@ body {
     background-color: $white;
     color: $dk-grey;
     font-size: 1em;
+
+    @media (min-width: 1920px) {
+        font-size: 1.2em;
+    }
 }
 
 .row {
@@ -95,6 +103,10 @@ h3 {
     list-style-type: none;
 }
 
+.container-fluid {
+    height: 100%;
+}
+
 // header
 header#top-nav {
     background-color: $primary;
@@ -102,6 +114,8 @@ header#top-nav {
     color: $white;
     height: 60px;
     font-size: 1.3em;
+    position: relative;
+    z-index: 2;
 
     img#logo {
         float: left;
@@ -149,7 +163,6 @@ nav#left-nav {
     display: none;
     background-color: $secondary;
     color: $white;
-    position: absolute;
     bottom: unset;
     z-index: 1;
     width: 100%;
@@ -158,9 +171,10 @@ nav#left-nav {
     @media (min-width: 768px) { 
         display: block !important;
         width: 100px;
-        position: absolute;
+        position: fixed;
+        top: 0;
+        padding-top: 60px;
         bottom: 0;
-        top: 60px;
     }
 
     li {
@@ -400,18 +414,18 @@ main {
 // metric snapshot
 aside#metrics {
     display: none;
-    position: absolute;
+    position: fixed;
+    top: 0;
+    bottom: 0;
     right: 0;
     width: 120px;
-    top: 60px;
-    bottom: 0;
     background-color: $accent;
     color: $ash-blue;
     text-align: center;
-    padding: 40px 20px;
+    padding: 60px 20px 40px;
     font-size: 1.2em;
     .metric-item {
-        margin-bottom: 60px;
+        margin: 30px 0;
         h2 {
             font-family: $oswald;
             font-weight: 300;
