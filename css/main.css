@@ -177,6 +177,9 @@ main {
   @media (max-width: 499px) {
     main .order-list .order-container {
       padding: 0; } }
+  @media (min-width: 1200px) {
+    main .order-list .order-container {
+      width: 20%; } }
   main .order-list .order-item {
     margin-top: 15px;
     padding: 15px 25px 66px 25px;

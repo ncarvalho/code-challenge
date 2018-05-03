@@ -263,6 +263,10 @@ main {
             @media (max-width: 499px) {
                 padding: 0;
             }
+
+            @media (min-width: $lg) {
+                width: 20%;
+            }
         }
         .order-item {
             margin-top: 15px;
