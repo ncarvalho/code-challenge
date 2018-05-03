@@ -63,7 +63,7 @@ body {
     font-size: 1em;
 
     @media (min-width: $xl) {
-        font-size: 1.3em;
+        font-size: 1.2em;
     }
 }
 
@@ -263,6 +263,10 @@ main {
             @media (max-width: 499px) {
                 padding: 0;
             }
+
+            @media (min-width: $xl) {
+                width: 20%;
+            }
         }
         .order-item {
             margin-top: 15px;
@@ -270,6 +274,9 @@ main {
             background-color: $lt-grey;
             position: relative;
             margin-bottom: 20px;
+            & > small {
+                font-size: 1.2em;
+            }
 
             @media (min-width: 500px) and (max-width: $sm) {
                 min-height: 280px;
@@ -279,6 +286,11 @@ main {
                 min-height: 280px;
                 height: 280px;
                 padding: 15px 25px 0 25px;
+            }
+
+            @media (min-width: $xl) {
+                min-height: 310px;
+                height: 310px;
             }
 
             .badge {
@@ -324,6 +336,12 @@ main {
                     border-bottom: 1px solid $lt-grey;
                     text-transform: uppercase;
                     overflow: hidden;
+                    font-size: 1.3em;
+
+                    @media (min-width: $xl) {
+                        font-size: 1.5em;
+                    }
+
                     &:last-of-type {
                         border-bottom: none;
                     }
