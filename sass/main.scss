@@ -264,7 +264,7 @@ main {
                 padding: 0;
             }
 
-            @media (min-width: $lg) {
+            @media (min-width: $xl) {
                 width: 20%;
             }
         }
@@ -338,7 +338,7 @@ main {
                     overflow: hidden;
                     font-size: 1.3em;
 
-                    @media (min-width: $lg) {
+                    @media (min-width: $xl) {
                         font-size: 1.5em;
                     }
 

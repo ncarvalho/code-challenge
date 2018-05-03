@@ -177,7 +177,7 @@ main {
   @media (max-width: 499px) {
     main .order-list .order-container {
       padding: 0; } }
-  @media (min-width: 1200px) {
+  @media (min-width: 1440px) {
     main .order-list .order-container {
       width: 20%; } }
   main .order-list .order-item {
@@ -231,7 +231,7 @@ main {
       text-transform: uppercase;
       overflow: hidden;
       font-size: 1.3em; }
-      @media (min-width: 1200px) {
+      @media (min-width: 1440px) {
         main .order-list .order-item .order-receipt .receipt-item {
           font-size: 1.5em; } }
       main .order-list .order-item .order-receipt .receipt-item:last-of-type {
