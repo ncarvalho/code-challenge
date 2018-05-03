@@ -39,38 +39,6 @@ h1 {
 h3 {
   margin: 0; }
 
-header.top-nav {
-  background-color: #112131;
-  padding: 15px;
-  color: #ffffff;
-  height: 60px; }
-  header.top-nav img.logo {
-    float: left;
-    margin-right: 25px; }
-  header.top-nav h1.logo-text {
-    margin: 5px 0;
-    display: none; }
-    @media (min-width: 768px) {
-      header.top-nav h1.logo-text {
-        display: inline-block; } }
-  header.top-nav #hamburger {
-    display: inline-block;
-    margin-right: 15px; }
-    header.top-nav #hamburger:hover, header.top-nav #hamburger:focus {
-      color: #ffffff; }
-    @media (min-width: 768px) {
-      header.top-nav #hamburger {
-        display: none; } }
-  header.top-nav .status-dropdown-btn {
-    color: #ffffff;
-    text-decoration: none; }
-  header.top-nav .time {
-    display: none;
-    margin-left: 30px; }
-    @media (min-width: 768px) {
-      header.top-nav .time {
-        display: inline-block; } }
-
 .no-margins {
   margin: 0; }
 
@@ -87,6 +55,39 @@ header.top-nav {
   padding: 0;
   list-style-type: none; }
 
+header#top-nav {
+  background-color: #112131;
+  padding: 15px;
+  color: #ffffff;
+  height: 60px; }
+  header#top-nav img#logo {
+    float: left;
+    margin-right: 25px; }
+  header#top-nav h1#logo-text {
+    margin: 5px 0;
+    display: none; }
+    @media (min-width: 768px) {
+      header#top-nav h1#logo-text {
+        display: inline-block; } }
+  header#top-nav #hamburger {
+    display: inline-block;
+    margin-right: 15px; }
+    header#top-nav #hamburger:hover, header#top-nav #hamburger:focus {
+      color: #ffffff; }
+    @media (min-width: 768px) {
+      header#top-nav #hamburger {
+        display: none; } }
+  header#top-nav .status-dropdown-btn {
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer; }
+  header#top-nav .time {
+    display: none;
+    margin-left: 30px; }
+    @media (min-width: 768px) {
+      header#top-nav .time {
+        display: inline-block; } }
+
 nav#left-nav {
   display: none;
   background-color: #2e4052;
@@ -97,7 +98,7 @@ nav#left-nav {
   width: 100%; }
   @media (min-width: 768px) {
     nav#left-nav {
-      display: block;
+      display: block !important;
       width: 100px;
       position: absolute;
       bottom: 0;
@@ -123,11 +124,12 @@ nav#left-nav {
 
 main {
   margin: 0 0 60px 0;
-  padding: 40px 25px;
+  padding: 40px 0 0;
   overflow: hidden;
   width: 100%; }
   @media (min-width: 768px) {
     main {
+      padding: 40px 25px 0;
       margin: 0 120px 60px 100px;
       width: unset; } }
   main #pending-orders {
@@ -152,6 +154,9 @@ main {
     main .order-list .order-container {
       width: 50%;
       float: left; } }
+  @media (max-width: 499px) {
+    main .order-list .order-container {
+      padding: 0; } }
   main .order-list .order-item {
     margin-top: 15px;
     padding: 15px 25px 66px 25px;
@@ -170,8 +175,11 @@ main {
       padding: 10px 10px 8px 10px;
       position: absolute;
       top: -15px;
-      left: 0;
+      left: 15px;
       font-weight: 400; }
+      @media (min-width: 500px) {
+        main .order-list .order-item .badge {
+          left: 0; } }
       main .order-list .order-item .badge.badge-blue {
         background-color: #249cae; }
       main .order-list .order-item .badge.badge-ash {
@@ -255,7 +263,7 @@ main {
           main .order-list .order-item .options.process-options a:hover {
             color: #9a9797; }
 
-aside.metrics {
+aside#metrics {
   display: none;
   position: absolute;
   right: 0;
@@ -265,19 +273,31 @@ aside.metrics {
   background-color: #e8ecf1;
   color: #566a7f;
   text-align: center;
-  padding: 40px 10px; }
-  aside.metrics .metric-item h2 {
-    font-family: "Oswald", sans-serif;
-    font-weight: 300;
-    font-size: 3em;
-    margin-top: 0; }
+  padding: 40px 20px; }
+  aside#metrics .metric-item {
+    margin-bottom: 60px; }
+    aside#metrics .metric-item h2 {
+      font-family: "Oswald", sans-serif;
+      font-weight: 300;
+      font-size: 3em;
+      margin-top: 0; }
+    aside#metrics .metric-item label {
+      font-family: "Oswald", sans-serif;
+      font-weight: 400;
+      letter-spacing: 1px;
+      margin-top: 10px; }
   @media (min-width: 768px) {
-    aside.metrics {
+    aside#metrics {
       display: block; } }
 
 footer {
   position: absolute;
   bottom: 0;
-  left: 100px;
-  right: 120px;
+  left: 0;
+  right: 0;
   padding: 20px 40px; }
+  @media (min-width: 768px) {
+    footer {
+      display: block;
+      left: 100px;
+      right: 120px; } }
