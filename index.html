@@ -6,21 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Food Central</title>
     
-    <link rel="icon" 
-      type="image/png" 
-      href="./images/favicon.png">
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="./images/favicon.png">
+
+    <!-- stylesheets: bootstrap, icons, fonts, custom -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,700|Quicksand:400,500,700" rel="stylesheet">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
 </head>
 <body>
     <div class="container-fluid">
         <div class="row">
-            <header class="top-nav">
+            <header id="top-nav">
                 <a href="#" class="pull-left text-white" id="hamburger"><i class="mdi mdi-menu mdi-24px" id="hamburger-icon"></i></a>
-                <img src="./images/logo.png" class="logo" alt="Food Central" width="50">
-                <h1 class="logo-text">Food Central</h1>
+                <img src="./images/logo.png" id="logo" alt="Food Central" width="50">
+                <h1 id="logo-text">Food Central</h1>
 
                 <div class="pull-right">
                     <ul class="inline-list">
@@ -96,7 +97,7 @@
                                         <i class="mdi mdi-dots-horizontal mdi-18px"></i>
                                     </a>
                                     
-                                    <!-- details -->
+                                    <!-- receipt modal -->
                                     <div class="modal fade" id="H178X76" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                                         <div class="modal-dialog" role="document">
                                         <div class="modal-content">
@@ -149,7 +150,7 @@
                                         </div>
                                     </div>
 
-                                    <h5>#H178X76</h4>
+                                    <h5>#H178X76</h5>
                                     <ul class="clean-list item-list">
                                         <li>
                                             <span class="item-count">3</span> Spicy Miso
@@ -213,7 +214,7 @@
 
                                     <small class="pull-right text-grey">8:05 PM</small>
 
-                                    <h5>#H178X71</h4>
+                                    <h5>#H178X71</h5>
                                     <ul class="clean-list item-list">
                                         <li>
                                             <span class="item-count">1</span> Spicy Miso
@@ -229,7 +230,7 @@
                                     </ul>
 
                                     <div class="options process-options text-center">
-                                        <a type="button" class="see-more" data-toggle="modal" data-target="#H178X72">
+                                        <a type="button" class="see-more" data-toggle="modal" data-target="#H178X71">
                                             <i class="mdi mdi-dots-horizontal mdi-18px"></i>
                                         </a>
                                         <a href="#" class="text-dark">
@@ -240,12 +241,13 @@
                                         </a>
                                     </div>
 
-                                    <div class="modal fade" id="H178X71" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                    <!-- receipt modal -->
+                                    <div class="modal fade" id="H178X71" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
                                         <div class="modal-dialog" role="document">
                                             <div class="modal-content">
                                                 <div class="modal-header">
                                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                                    <h4 class="modal-title" id="myModalLabel">#H178X71 <small>8:05 PM</small></h4>
+                                                    <h4 class="modal-title" id="myModalLabel2">#H178X71 <small>8:05 PM</small></h4>
                                                 </div>
                                                 <div class="modal-body">
                                                     <h4 class="no-margins">1304 West 2nd Street</h4>
@@ -299,7 +301,7 @@
 
                                     <small class="pull-right text-grey">8:24 PM</small>
 
-                                    <h5>#H178X73</h4>
+                                    <h5>#H178X73</h5>
                                     <ul class="clean-list item-list">
                                         <li>
                                             <span class="item-count">1</span> Tonkotzu
@@ -332,13 +334,14 @@
                                             <i class="mdi mdi-phone"></i>
                                         </a>
                                     </div>
-
-                                    <div class="modal fade" id="H178X73" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                    
+                                    <!-- receipt modal -->
+                                    <div class="modal fade" id="H178X73" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3">
                                         <div class="modal-dialog" role="document">
                                             <div class="modal-content">
                                                 <div class="modal-header">
                                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                                    <h4 class="modal-title" id="myModalLabel">#H178X73 <small>8:24 PM</small></h4>
+                                                    <h4 class="modal-title" id="myModalLabel3">#H178X73 <small>8:24 PM</small></h4>
                                                 </div>
                                                 <div class="modal-body">
                                                     <h4 class="no-margins">1304 West 2nd Street</h4>
@@ -399,7 +402,7 @@
 
                                     <small class="pull-right text-grey">8:33 PM</small>
 
-                                    <h5>#H178X74</h4>
+                                    <h5>#H178X74</h5>
                                     <ul class="clean-list item-list">
                                         <li>
                                             <span class="item-count">1</span> Spicy Miso
@@ -431,13 +434,14 @@
                                             <i class="mdi mdi-phone"></i>
                                         </a>
                                     </div>
-
-                                    <div class="modal fade" id="H178X74" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                    
+                                    <!-- receipt modal -->
+                                    <div class="modal fade" id="H178X74" tabindex="-1" role="dialog" aria-labelledby="myModalLabel4">
                                         <div class="modal-dialog" role="document">
                                             <div class="modal-content">
                                                 <div class="modal-header">
                                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                                    <h4 class="modal-title" id="myModalLabel">#H178X74 <small>8:33 PM</small></h4>
+                                                    <h4 class="modal-title" id="myModalLabel4">#H178X74 <small>8:33 PM</small></h4>
                                                 </div>
                                                 <div class="modal-body">
                                                     <h4 class="no-margins">1304 West 2nd Street</h4>
@@ -493,29 +497,29 @@
                 </section>
             </main>
 
-            <aside class="metrics">
+            <aside id="metrics">
                 <div class="metric-item">
                     <h2>46</h2>
-                    <span>orders today</span>
+                    <label>orders today</label>
                 </div>
                 <div class="metric-item">
-                    <canvas id="donut" width="100" height="100"></canvas>
+                    <canvas id="doughnut-chart" width="80" height="80"></canvas>
+                    <label>avg orders this week</label>
                 </div>
+                <div class="metric-item">
+                        <canvas id="doughnut-chart-2" width="80" height="80"></canvas>
+                        <label>avg orders this month</label>
+                    </div>
             </aside>
 
-            <footer>
-                <small class="text-grey">&copy; 2018 Food Central by Nicole Tavares Carvalho</small>
-            </footer>
+            
         </div>
     </div>
-    
 
-    
-
-
+    <!-- scripts: jquery, bootstrap, chartjs, custom -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="./node_modules/chart.js/dist/Chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
     <script src="./js/main.js"></script>
 </body>
 </html>

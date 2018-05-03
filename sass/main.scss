@@ -47,6 +47,12 @@ $quicksand: 'Quicksand', sans-serif;
 $sm: 768px;
 $md: 992px;
 $lg: 1200px;
+$xl: 1440px;
+
+// general
+html, body {
+    height: 100%;
+}
 
 body {
     background: $white;
@@ -54,10 +60,16 @@ body {
     font-weight: 300;
     background-color: $white;
     color: $dk-grey;
+    font-size: 1em;
+
+    @media (min-width: $xl) {
+        font-size: 1.3em;
+    }
 }
 
 .row {
     position: relative;
+    height: 100%;
 }
 
 h1 {
@@ -65,56 +77,11 @@ h1 {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 7px;
-    font-size: 18px;
+    font-size: 2em;
 }
 
 h3 {
     margin: 0;
-}
-
-header.top-nav {
-    background-color: $primary;
-    padding: 15px;
-    color: $white;
-    height: 60px;
-
-    img.logo {
-        float: left;
-        margin-right: 25px;
-    }
-    h1.logo-text {
-        margin: 5px 0;
-        display: none;
-
-        @media (min-width: $sm) {
-            display: inline-block;
-        }
-    }
-
-    #hamburger {
-        display: inline-block;
-        margin-right: 15px;
-        &:hover, &:focus {
-            color: $white;
-        }
-        @media (min-width: $sm) {
-            display: none;
-        }
-    }
-
-    .status-dropdown-btn {
-        color: $white;
-        text-decoration: none;
-    }
-
-    .time {
-        display: none;
-        margin-left: 30px;
-
-        @media (min-width: $sm) {
-            display: inline-block;
-        }
-    }
 }
 
 .no-margins {
@@ -137,21 +104,79 @@ header.top-nav {
     list-style-type: none;
 }
 
+.container-fluid {
+    height: 100%;
+}
+
+// header
+header#top-nav {
+    background-color: $primary;
+    padding: 15px;
+    color: $white;
+    height: 60px;
+    font-size: 1.3em;
+    position: relative;
+    z-index: 2;
+
+    img#logo {
+        float: left;
+        margin-right: 25px;
+    }
+    h1#logo-text {
+        margin: 5px 0;
+        display: none;
+        font-size: 1.3em;
+
+        @media (min-width: $sm) {
+            display: inline-block;
+        }
+    }
+
+    #hamburger {
+        display: inline-block;
+        margin-right: 15px;
+        &:hover, &:focus {
+            color: $white;
+        }
+        @media (min-width: $sm) {
+            display: none;
+        }
+    }
+
+    .status-dropdown-btn {
+        color: $white;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .time {
+        display: none;
+        margin-left: 30px;
+
+        @media (min-width: $sm) {
+            display: inline-block;
+        }
+    }
+}
+
+// left nav
 nav#left-nav {
     display: none;
     background-color: $secondary;
     color: $white;
-    position: absolute;
     bottom: unset;
     z-index: 1;
     width: 100%;
+    font-size: 1.2em;
+    position: absolute;
 
     @media (min-width: 768px) { 
-        display: block;
+        display: block !important;
         width: 100px;
-        position: absolute;
+        position: fixed;
+        top: 0;
+        padding-top: 60px;
         bottom: 0;
-        top: 60px;
     }
 
     li {
@@ -182,14 +207,17 @@ nav#left-nav {
     }
 }
 
+// main content
 main {
-    margin: 0 0 60px 0;
-    padding: 40px 25px;
+    margin: 0;
+    padding: 40px 0 0;
     overflow: hidden;
     width: 100%;
+    font-size: 1em;
 
     @media (min-width: 768px) {
-        margin: 0 120px 60px 100px;
+        padding: 40px 25px 0;
+        margin: 0 120px 0 100px;
         width: unset;
     }
 
@@ -198,8 +226,12 @@ main {
         overflow: hidden;
     }
 
+    #progress-filter {
+        cursor: pointer;
+    }
+
     h3 {
-        font-size: 18px;
+        font-size: 1.8em;
     }
 
     .section-header {
@@ -212,7 +244,7 @@ main {
             a {
                 text-transform: uppercase;
                 color: $dk-grey;
-                font-size: 11px;
+                font-size: 1.1em;
                 transition: color 0.2s;
                 &:hover {
                     color: lighten($dk-grey, 20%);
@@ -227,6 +259,10 @@ main {
                 width: 50%;
                 float: left;
             }
+
+            @media (max-width: 499px) {
+                padding: 0;
+            }
         }
         .order-item {
             margin-top: 15px;
@@ -236,11 +272,12 @@ main {
             margin-bottom: 20px;
 
             @media (min-width: 500px) and (max-width: $sm) {
-                height: 260px;
+                min-height: 280px;
             }
 
             @media (min-width: 768px) {
-                height: 260px;
+                min-height: 280px;
+                height: 280px;
                 padding: 15px 25px 0 25px;
             }
 
@@ -249,8 +286,12 @@ main {
                 padding: 10px 10px 8px 10px;
                 position: absolute;
                 top: -15px;
-                left: 0;
+                left: 15px;
                 font-weight: 400;
+
+                @media (min-width: 500px) {
+                    left: 0;
+                }
 
                 &.badge-blue {
                     background-color: $lt-blue;
@@ -306,7 +347,7 @@ main {
             .item-list {
                  & > li {
                     text-transform: uppercase;
-                    font-size: 12px;
+                    font-size: 1.4em;
                     margin-bottom: 10px;
 
                     .item-count {
@@ -321,7 +362,7 @@ main {
                     li {
                         text-transform: lowercase;
                         color: lighten($dk-grey, 30%);
-                        font-size: 11px;
+                        font-size: .9em;
                     }
                 }
             }
@@ -333,6 +374,7 @@ main {
                 left: 0;
                 right: 0;
                 bottom: 0;
+                font-size: 1.3em;
                 a {
                     display: block;
                     padding: 10px 5px;
@@ -376,34 +418,37 @@ main {
     }
 }
 
-aside.metrics {
+// metric snapshot
+aside#metrics {
     display: none;
-    position: absolute;
+    position: fixed;
+    top: 0;
+    bottom: 0;
     right: 0;
     width: 120px;
-    top: 60px;
-    bottom: 0;
     background-color: $accent;
     color: $ash-blue;
     text-align: center;
-    padding: 40px 10px;
+    padding: 60px 20px 40px;
+    font-size: 1.2em;
     .metric-item {
+        margin: 30px 0;
         h2 {
             font-family: $oswald;
             font-weight: 300;
             font-size: 3em;
             margin-top: 0;
         }
+
+        label {
+            font-family: $oswald;
+            font-weight: 400;
+            letter-spacing: 1px;
+            margin-top: 10px;
+            font-family: 1em;
+        }
     }
-    @media (min-width: 768px) { 
+    @media (min-width: $sm) { 
         display: block;
     }
-}
-
-footer { 
-    position: absolute;
-    bottom: 0;
-    left: 100px;
-    right: 120px;
-    padding: 20px 40px;
 }
